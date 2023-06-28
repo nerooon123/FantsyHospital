@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9a505b77ebc841809e5b7067ef87d7a7" Name="Diagram1" ZoomLevel="77">
+        <EntityTypeShape EntityType="FantasyHospitalModel.Departments" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Doctors" Width="1.5" PointX="3" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Forms" Width="1.5" PointX="5.25" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Genders" Width="1.5" PointX="0.75" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.ICOD" Width="1.5" PointX="0.75" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Patients" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Specializations" Width="1.5" PointX="0.75" PointY="16.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Statuses" Width="1.5" PointX="0.75" PointY="13.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Users" Width="1.5" PointX="0.75" PointY="7" IsExpanded="true" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Doctors_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Doctors_Specializations" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Doctors_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Forms_Patients" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Patients_Genders" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Patients_ICOD" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Patients_Statuses" ManuallyRouted="false" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Patients_Users" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Administrations" Width="1.5" PointX="3" PointY="19.125" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Administrtions_Users1" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.MedicalProcedures" Width="2.125" PointX="8.5" PointY="0.875" />
+        <EntityTypeShape EntityType="FantasyHospitalModel.Nurses" Width="1.5" PointX="6.75" PointY="5.25" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Nurses_Departments" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Nurses_MedicalProcedures" />
+        <AssociationConnector Association="FantasyHospitalModel.FK_Nurses_Users" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
