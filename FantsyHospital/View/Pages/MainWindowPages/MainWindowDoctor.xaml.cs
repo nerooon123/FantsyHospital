@@ -13,6 +13,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using FantsyHospital.View.Pages.ResourcePages.DoctorPages;
 
 namespace FantsyHospital.View.Pages.MainWindowPages
 {
@@ -25,6 +26,11 @@ namespace FantsyHospital.View.Pages.MainWindowPages
         public MainWindowDoctor(Doctors userDoctor)
         {
             InitializeComponent();
+        }
+
+        private void AllPatientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new PatientsControlPage());
         }
     }
 }

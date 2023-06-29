@@ -1,4 +1,5 @@
 ﻿using FantsyHospital.Model;
+using FantsyHospital.View.Pages.ResourcePages.AdministrationPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace FantsyHospital.View.Pages.MainWindowPages
         public MainWindowAdministration(Administrations userAdmin)
         {
             InitializeComponent();
+        }
+
+        private void AllUsersButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new UsersControlPage());
         }
     }
 }

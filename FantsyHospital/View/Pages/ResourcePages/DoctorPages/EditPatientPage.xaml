@@ -1,0 +1,98 @@
+﻿<Page x:Class="FantsyHospital.View.Pages.ResourcePages.DoctorPages.EditPatientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FantsyHospital.View.Pages.ResourcePages.DoctorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="EditPatientPage">
+
+    <Grid>
+        <StackPanel  VerticalAlignment="Center" 
+                     HorizontalAlignment="Center" 
+                     Width="600"
+                     >
+
+            <TextBlock x:Name="IdTextBlock" Style="{StaticResource MainTextBlock}" Visibility="Visible"/>
+            
+            <UniformGrid Columns="2">
+
+                <TextBlock Text="ИМЯ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="NameTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ФАМИЛИЯ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="SurnameTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ОТЧЕСТВО:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="PatronymicTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ДАТА РОЖДЕНИЯ:" Style="{StaticResource MainTextBlock}" />
+
+                <DatePicker x:Name="DateOfBirthdayPicker" VerticalAlignment="Center"/>
+
+                <TextBlock Text="ПОЛ:" Style="{StaticResource MainTextBlock}" />
+
+                <ComboBox x:Name="GenderComboBox" Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ЖИЛОЙ АДРЕС:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="AddresTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="НОМЕР ТЕЛЕФОНА: " Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="NumberPhoneTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ДАТА ПОСТУПЛЕНИЕ:" Style="{StaticResource MainTextBlock}" />
+
+                <DatePicker x:Name="DateOfReceiptPicker" VerticalAlignment="Center"/>
+
+                <TextBlock Text="ДАТА ВЫПИСКИ:" Style="{StaticResource MainTextBlock}" />
+
+                <DatePicker x:Name="DateOfDischargePicker" VerticalAlignment="Center"/>
+
+                
+                <TextBlock Text="МКБ:" Style="{StaticResource MainTextBlock}" />
+
+                <ComboBox x:Name="ICODComboBox" Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="СТАТУС:" Style="{StaticResource MainTextBlock}" />
+
+                <ComboBox x:Name="StatusComboBox" Padding="10"
+                     Margin="1 10 0 10"/>
+
+
+            </UniformGrid>
+
+            <TextBlock x:Name="LoginTextBlock" Style="{StaticResource MainTextBlock}" Visibility="Visible"/>
+
+            <Button x:Name="EditButton" 
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Изменить" 
+                    Click="EditButton_Click"
+                    Height="40"/>
+
+
+        </StackPanel>
+    </Grid>
+</Page>

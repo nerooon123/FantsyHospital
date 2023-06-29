@@ -9,6 +9,15 @@
       Title="MainWindowAdministration">
 
     <Grid>
-        <TextBlock Text="Админ"/>
+        <GroupBox Header="Админ панель" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fff">
+            <UniformGrid Columns="1">
+                <Button x:Name="AllUsersButton"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Все пользователи" Click="AllUsersButton_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+            </UniformGrid>
+        </GroupBox>
     </Grid>
 </Page>
