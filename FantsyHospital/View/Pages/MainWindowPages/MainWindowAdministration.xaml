@@ -9,15 +9,83 @@
       Title="MainWindowAdministration">
 
     <Grid>
-        <GroupBox Header="Админ панель" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fff">
-            <UniformGrid Columns="1">
-                <Button x:Name="AllUsersButton"
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <UniformGrid Columns="2">
+                <GroupBox Header="Панель Доктора" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fff">
+                    <UniformGrid Columns="1">
+                        <Button x:Name="AllPatientsButton"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Все пациенты" Click="AllPatientsButton_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+                    </UniformGrid>
+                </GroupBox>
+
+                <GroupBox Header="Панель Медсестры" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fff">
+                    <UniformGrid Columns="1">
+                        <Button x:Name="NurseAllPatientsButton"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Все пациенты" Click="NurseAllPatientsButton_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+                    </UniformGrid>
+                </GroupBox>
+            </UniformGrid>
+
+            <GroupBox Header="Админ панель" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#fff">
+                <UniformGrid Columns="3">
+                    <Button x:Name="AllUsersButton"
                     Style="{StaticResource MainButtonStyle}" 
                     Content="Все пользователи" Click="AllUsersButton_Click"
                     Width="200"
                     Height="30"
                     Margin="10 10 10 10"/>
-            </UniformGrid>
-        </GroupBox>
+
+                    <Button x:Name="ICOD"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить МКБ" Click="ICOD_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+
+                    <Button x:Name="AddDoctor"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить Доктора" Click="AddDoctor_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+
+                    <Button x:Name="AddNurse"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить Медсестру" Click="AddNurse_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+
+                    <Button x:Name="MedicalProcedures"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить Мед. процедуры" Click="AddNurse_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+
+                    <Button x:Name="Specialization"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить специальности" Click="Specialization_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+
+                    <Button x:Name="Department"
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить отделение" Click="Department_Click"
+                    Width="200"
+                    Height="30"
+                    Margin="10 10 10 10"/>
+                </UniformGrid>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Page>

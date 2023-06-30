@@ -1,0 +1,116 @@
+﻿<Page x:Class="FantsyHospital.View.Pages.ResourcePages.DoctorPages.AddNewFormPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FantsyHospital.View.Pages.ResourcePages.DoctorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1300"
+      Title="AddNewFormPage">
+
+    <Grid>
+        <StackPanel  VerticalAlignment="Center" 
+                     HorizontalAlignment="Center" 
+                     Width="600"
+                     >
+
+
+            <UniformGrid Columns="4">
+
+                <TextBlock Text="ИМЯ ПАЦИЕНТА:" Style="{StaticResource MainTextBlock}" />
+
+                <ComboBox x:Name="NamePatientComboBox" Padding="10"
+                     Margin="1 10 0 10"/>
+
+
+                <TextBlock Text="ДЕНЬ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="DayTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="НОМЕР КАРТЫ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="NumberTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ПУЛЬС:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="PulseTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="АРТЕРИАЛЬНОЕ ДАВЛЕНИЕ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="BloodPressureTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ТЕМПЕРАТУРА:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="TemperatureTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ДЫХАНИЕ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="BreathTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ВЕС:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="WeightTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ВЫПИТО ЖИДКОСТИ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="LiquidConsumedTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="СУТОЧНОЕ КОЛИЧЕСТВО МОЧИ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="DailyAmountOfUrineTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="СТУЛ:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="ChairTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+                <TextBlock Text="ВАННА:" Style="{StaticResource MainTextBlock}" />
+
+                <TextBox x:Name="BathTextBox"
+                     Style="{StaticResource MainTextBoxStyle}"
+                     Padding="10"
+                     Margin="1 10 0 10"/>
+
+
+
+            </UniformGrid>
+
+            <Button x:Name="AddButton" 
+                    Style="{StaticResource MainButtonStyle}" 
+                    Content="Добавить" 
+                    Click="AddButton_Click"
+                    Height="40"/>
+
+
+        </StackPanel>
+    </Grid>
+</Page>

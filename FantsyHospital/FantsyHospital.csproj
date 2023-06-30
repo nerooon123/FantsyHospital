@@ -78,6 +78,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Controllers\AdministrationController.cs" />
+    <Compile Include="Controllers\DoctorController.cs" />
+    <Compile Include="Controllers\NurseController.cs" />
     <Compile Include="Controllers\PatientsController.cs" />
     <Compile Include="Model\Administrations.cs">
       <DependentUpon>Model.tt</DependentUpon>
@@ -169,8 +172,20 @@
     <Compile Include="View\Pages\RegistrationPages\PatientRegPage.xaml.cs">
       <DependentUpon>PatientRegPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pages\ResourcePages\AdministrationPages\AddDepartmentPage.xaml.cs">
+      <DependentUpon>AddDepartmentPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ResourcePages\AdministrationPages\AddICODPage.xaml.cs">
+      <DependentUpon>AddICODPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ResourcePages\AdministrationPages\AddSpecializationPage.xaml.cs">
+      <DependentUpon>AddSpecializationPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="View\Pages\ResourcePages\AdministrationPages\UsersControlPage.xaml.cs">
       <DependentUpon>UsersControlPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ResourcePages\DoctorPages\AddNewFormPage.xaml.cs">
+      <DependentUpon>AddNewFormPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\Pages\ResourcePages\DoctorPages\AddPatientPage.xaml.cs">
       <DependentUpon>AddPatientPage.xaml</DependentUpon>
@@ -183,6 +198,9 @@
     </Compile>
     <Compile Include="View\Pages\ResourcePages\DoctorPages\TemperatureSheetPage.xaml.cs">
       <DependentUpon>TemperatureSheetPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Pages\ResourcePages\NursePages\NursePatientsControlPage.xaml.cs">
+      <DependentUpon>NursePatientsControlPage.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -236,7 +254,23 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\ResourcePages\AdministrationPages\AddDepartmentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ResourcePages\AdministrationPages\AddICODPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ResourcePages\AdministrationPages\AddSpecializationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="View\Pages\ResourcePages\AdministrationPages\UsersControlPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ResourcePages\DoctorPages\AddNewFormPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -253,6 +287,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="View\Pages\ResourcePages\DoctorPages\TemperatureSheetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Pages\ResourcePages\NursePages\NursePatientsControlPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -288,6 +326,7 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="forma003u.doc" />
     <None Include="Model\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -303,10 +342,7 @@
   <ItemGroup>
     <Resource Include="Assets\Images\Logo.png" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="View\Pages\ResourcePages\NursePages\" />
-    <Folder Include="View\Pages\ResourcePages\PatientPages\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Resource Include="Assets\Images\back.png" />
     <Resource Include="Assets\Images\log-out.png" />

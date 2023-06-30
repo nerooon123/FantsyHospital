@@ -18,7 +18,7 @@
             <GroupBox Header="Поиск" Foreground="#fff" Margin="0 0 0 10">
                 <TextBox x:Name="SearchTextBox" Style="{StaticResource MainTextBoxStyle}" Padding="10 0 0 0" TextChanged="OnSearchTextBoxTextChanged"/>
             </GroupBox>
-            <Button x:Name="Form004Button" Style="{StaticResource MainButtonStyle}" Content="Форма 004 | WORD |" Height="30" Margin="10 10 10 10" Click="Form004Button_Click"/>
+            <Button x:Name="AddNewFormButton" Style="{StaticResource MainButtonStyle}" Content="Добавить в форму данные" Height="30" Margin="10 10 10 10" Click="AddNewFormButton_Click"/>
         </UniformGrid>
 
         <!-- Patient -->
@@ -27,6 +27,7 @@
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ID" Binding="{Binding IdForm}"/>
                     <DataGridTextColumn Header="Имя пациента" Binding="{Binding Patients.Name}"/>
+                    <DataGridTextColumn Header="День" Binding="{Binding Day}"/>
                     <DataGridTextColumn Header="Номер карты" Binding="{Binding NameForm}"/>
                     <DataGridTextColumn Header="Пульс" Binding="{Binding Pulse}"/>
                     <DataGridTextColumn Header="Артериальное давление" Binding="{Binding BloodPressure}"/>

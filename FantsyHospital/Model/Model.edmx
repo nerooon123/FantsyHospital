@@ -40,7 +40,8 @@
           </Key>
           <Property Name="IdForm" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Patient" Type="int" Nullable="false" />
-          <Property Name="NameForm" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Day" Type="int" />
+          <Property Name="NameForm" Type="nvarchar" MaxLength="100" />
           <Property Name="Pulse" Type="nvarchar" MaxLength="100" />
           <Property Name="BloodPressure" Type="nvarchar" MaxLength="100" />
           <Property Name="Temperature" Type="nvarchar" MaxLength="100" />
@@ -406,7 +407,7 @@
           </Key>
           <Property Name="IdForm" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Patient" Type="Int32" Nullable="false" />
-          <Property Name="NameForm" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="NameForm" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Pulse" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="BloodPressure" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Temperature" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
@@ -417,6 +418,7 @@
           <Property Name="Chair" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="Bath" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="Patients" Relationship="Self.FK_Forms_Patients" FromRole="Forms" ToRole="Patients" />
+          <Property Name="Day" Type="Int32" />
         </EntityType>
         <EntityType Name="Genders">
           <Key>
@@ -807,6 +809,7 @@
           <EntitySetMapping Name="Forms">
             <EntityTypeMapping TypeName="FantasyHospitalModel.Forms">
               <MappingFragment StoreEntitySet="Forms">
+                <ScalarProperty Name="Day" ColumnName="Day" />
                 <ScalarProperty Name="IdForm" ColumnName="IdForm" />
                 <ScalarProperty Name="Patient" ColumnName="Patient" />
                 <ScalarProperty Name="NameForm" ColumnName="NameForm" />

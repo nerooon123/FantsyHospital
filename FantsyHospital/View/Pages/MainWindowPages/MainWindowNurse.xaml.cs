@@ -1,4 +1,5 @@
 ﻿using FantsyHospital.Model;
+using FantsyHospital.View.Pages.ResourcePages.NursePages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,11 @@ namespace FantsyHospital.View.Pages.MainWindowPages
         public MainWindowNurse(Nurses userNurse)
         {
             InitializeComponent();
+        }
+
+        private void AllPatientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new NursePatientsControlPage());
         }
     }
 }

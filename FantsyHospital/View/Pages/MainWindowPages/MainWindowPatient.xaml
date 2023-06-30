@@ -9,6 +9,47 @@
       Title="MainWindowPatient">
 
     <Grid>
-        <TextBlock Text="Пациент"/>
+        <StackPanel VerticalAlignment="Center" Margin="10 0 10 0">
+            <GroupBox Header="Информация о вас" Width="450">
+                <UniformGrid Columns="2">
+                    <TextBlock Text="Имя: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Name" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Фамилия: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Surname" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Отчество: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Patronymic" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Дата рождения: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="DateOfBirthday" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Пол: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Gender" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Жилой адрес: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Addres" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    
+                    <TextBlock Text="Номер телефона: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="NumberPhone" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Дата поступеление: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="DateOfReceipt" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="Дата выписки: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="DateOfDischarge" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+                    <TextBlock Text="МКБ: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="ICODs" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+
+
+                    <TextBlock Text="Статус: " Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+                    <TextBlock x:Name="Status" Style="{StaticResource MainTextBlock}" Foreground="#fff"/>
+
+
+                </UniformGrid>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Page>

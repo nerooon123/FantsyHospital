@@ -26,6 +26,7 @@ namespace FantsyHospital.Model
         public string DailyAmountOfUrine { get; set; }
         public string Chair { get; set; }
         public string Bath { get; set; }
+        public Nullable<int> Day { get; set; }
     
         public virtual Patients Patients { get; set; }
     }

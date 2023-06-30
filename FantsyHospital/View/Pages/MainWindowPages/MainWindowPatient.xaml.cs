@@ -1,6 +1,7 @@
 ﻿using FantsyHospital.Model;
 using System;
 using System.Collections.Generic;
+using System.Data.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,18 @@ namespace FantsyHospital.View.Pages.MainWindowPages
         public MainWindowPatient(Patients userPatient)
         {
             InitializeComponent();
+
+            Name.Text = userPatient.Name;
+            Surname.Text = userPatient.Surname;
+            Patronymic.Text = userPatient.Patronymic;
+            DateOfBirthday.Text = userPatient.DateOfBirth.ToString();
+            Gender.Text = userPatient.Genders.Gender;
+            Addres.Text = userPatient.Addres;
+            NumberPhone.Text = userPatient.PhoneNumber;
+            DateOfReceipt.Text = userPatient.DateOfReceipt.ToString();
+            DateOfDischarge.Text = userPatient.DateOfDischarge.ToString();
+            ICODs.Text = userPatient.ICOD.ToString();
+            Status.Text = userPatient.Status.ToString();
         }
     }
 }

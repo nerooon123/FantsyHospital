@@ -1,5 +1,8 @@
 ﻿using FantsyHospital.Model;
+using FantsyHospital.View.Pages.RegistrationPages;
 using FantsyHospital.View.Pages.ResourcePages.AdministrationPages;
+using FantsyHospital.View.Pages.ResourcePages.DoctorPages;
+using FantsyHospital.View.Pages.ResourcePages.NursePages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -31,6 +34,41 @@ namespace FantsyHospital.View.Pages.MainWindowPages
         private void AllUsersButton_Click(object sender, RoutedEventArgs e)
         {
             this.NavigationService.Navigate(new UsersControlPage());
+        }
+
+        private void AllPatientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new PatientsControlPage());
+        }
+
+        private void NurseAllPatientsButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new NursePatientsControlPage());
+        }
+
+        private void ICOD_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddICODPage());
+        }
+
+        private void AddDoctor_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new DoctorRegPage());
+        }
+
+        private void AddNurse_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new NurseRegPage());
+        }
+
+        private void Specialization_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddSpecializationPage());
+        }
+
+        private void Department_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddDepartmentPage());
         }
     }
 }

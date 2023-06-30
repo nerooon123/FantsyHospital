@@ -33,13 +33,6 @@ namespace FantsyHospital.View.Pages.ResourcePages.DoctorPages
             FormDataGrid.ItemsSource = db.context.Forms.ToList();
         }
 
-        private void Form004Button_Click(object sender, RoutedEventArgs e)
-        {
-
-
-
-        }
-
         private void OnSearchTextBoxTextChanged(object sender, TextChangedEventArgs e)
         {
             string searchText = SearchTextBox.Text.ToLower().Trim();
@@ -188,6 +181,11 @@ namespace FantsyHospital.View.Pages.ResourcePages.DoctorPages
 
             application.Visible = true;
 
+        }
+
+        private void AddNewFormButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.NavigationService.Navigate(new AddNewFormPage());
         }
     }
 }
