@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" 
         Height="800" 
-        Width="1200"
+        Width="1300"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True"
         WindowStyle="None"
@@ -38,6 +38,8 @@
                     Click="BackButton_Click">
             <Image Source="/Assets/Images/back.png"/>
         </Button>
+
+
 
         <TextBlock Text="FANTASY HOSPITAL"
                        Style="{StaticResource MainTextBlockStyle}"

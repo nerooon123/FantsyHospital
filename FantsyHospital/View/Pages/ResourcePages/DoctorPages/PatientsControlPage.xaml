@@ -20,7 +20,7 @@
             </GroupBox>
             <Button x:Name="AddNewPatient" Style="{StaticResource MainButtonStyle}" Content="Добавить нового пациента"  Height="30" Margin="10 10 10 10" Click="AddNewPatient_Click"/>
             <Button x:Name="excel" Style="{StaticResource MainButtonStyle}" Content="Отчет в Excel" Height="30" Margin="10 10 10 10" Click="excel_Click"/>
-            <Button x:Name="word" Style="{StaticResource MainButtonStyle}" Content="Отчет в Word" Height="30" Margin="10 10 10 10" Click="word_Click"/>
+            <Button x:Name="TemperatureSheetButton" Style="{StaticResource MainButtonStyle}" Content="Температурный лист" Height="30" Margin="10 10 10 10" Click="TemperatureSheetButton_Click"/>
         </UniformGrid>
 
         <!-- Patient -->
@@ -47,7 +47,6 @@
                                 <StackPanel Orientation="Horizontal">
                                     <Button x:Name="PatientDeleteButton" Content="Удалить" Click="PatientDeleteButton_Click" Style="{StaticResource MainButtonStyle}"/>
                                     <Button x:Name="PatientEditButton" Content="Изменить" Click="PatientEditButton_Click" Style="{StaticResource MainButtonStyle}"/>
-                                    <Button x:Name="Form004Button" Content="Форма 004" Click="Form004Button_Click" Style="{StaticResource MainButtonStyle}"/>
                                 </StackPanel>
                             </DataTemplate>
                         </DataGridTemplateColumn.CellTemplate>

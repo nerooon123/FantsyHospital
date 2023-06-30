@@ -167,36 +167,9 @@ namespace FantsyHospital.View.Pages.ResourcePages.DoctorPages
             this.NavigationService.Navigate(new EditPatientPage(item));
         }
 
-        private void Form004Button_Click(object sender, RoutedEventArgs e)
+        private void TemperatureSheetButton_Click(object sender, RoutedEventArgs e)
         {
-            try
-            {
-                var item = PatientDataGrid.SelectedItem as Patients;
-                //проверка того, что пользователь выбрал строки для удаления
-                if (item == null)
-                {
-                    MessageBox.Show("Вы не выбрали ни одной строки");
-                    return;
-                }
-                else
-                {
-                    //удаляем выбранную строку
-                    db.context.Patients.Remove(item);
-                    db.context.SaveChanges();
-                    MessageBox.Show("Информация удалена");
-                    //обновление DataGrid
-                    PatientDataGrid.ItemsSource = db.context.Patients.ToList();
-                }
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Данные не удалены. ");
-            }
-        }
-
-        private void word_Click(object sender, RoutedEventArgs e)
-        {
-
+            this.NavigationService.Navigate(new TemperatureSheetPage());
         }
     }
 }

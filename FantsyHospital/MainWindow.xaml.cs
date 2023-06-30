@@ -55,5 +55,6 @@ namespace FantsyHospital
         {
             Application.Current.Shutdown();
         }
+
     }
 }

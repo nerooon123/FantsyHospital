@@ -91,7 +91,7 @@ namespace FantsyHospital.View.Pages.ResourcePages.DoctorPages
                     objectToUpdate.DateOfReceipt = Convert.ToDateTime(DateOfReceiptPicker.SelectedDate.Value.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture));
                     objectToUpdate.DateOfDischarge = Convert.ToDateTime(DateOfDischargePicker.SelectedDate.Value.ToString("dd.MM.yyyy", System.Globalization.CultureInfo.InvariantCulture));
                     objectToUpdate.ICOD = 1 + ICODComboBox.SelectedIndex;
-                    objectToUpdate.Status = 1 + ICODComboBox.SelectedIndex;
+                    objectToUpdate.Status = 1 + StatusComboBox.SelectedIndex;
                     objectToUpdate.Login = LoginTextBlock.Text;
 
                     // Сохраняем изменения в базе данных
@@ -99,6 +99,7 @@ namespace FantsyHospital.View.Pages.ResourcePages.DoctorPages
                     {
                         db.context.SaveChanges();
                         MessageBox.Show("Данные успешно изменены.");
+                        this.NavigationService.Navigate(new PatientsControlPage());
                     }
                     catch (Exception ex)
                     {

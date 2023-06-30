@@ -181,6 +181,9 @@
     <Compile Include="View\Pages\ResourcePages\DoctorPages\PatientsControlPage.xaml.cs">
       <DependentUpon>PatientsControlPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Pages\ResourcePages\DoctorPages\TemperatureSheetPage.xaml.cs">
+      <DependentUpon>TemperatureSheetPage.xaml</DependentUpon>
+    </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -249,6 +252,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="View\Pages\ResourcePages\DoctorPages\TemperatureSheetPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\Core.cs" />
@@ -281,8 +288,6 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Assets\Files\forma003u.doc" />
-    <None Include="Assets\Files\forma004u.doc" />
     <None Include="Model\Model.edmx.diagram">
       <DependentUpon>Model.edmx</DependentUpon>
     </None>
@@ -307,6 +312,7 @@
     <Resource Include="Assets\Images\log-out.png" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="Assets\Images\reload.png" />
     <Content Include="Model\Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Model.Context.cs</LastGenOutput>

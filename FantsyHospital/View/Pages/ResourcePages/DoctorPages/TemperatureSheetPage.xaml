@@ -1,0 +1,56 @@
+﻿<Page x:Class="FantsyHospital.View.Pages.ResourcePages.DoctorPages.TemperatureSheetPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:FantsyHospital.View.Pages.ResourcePages.DoctorPages"
+      mc:Ignorable="d" 
+      d:DesignHeight="880" d:DesignWidth="1300"
+      Title="TemperatureSheetPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <UniformGrid Columns="2" Grid.Row="0">
+            <GroupBox Header="Поиск" Foreground="#fff" Margin="0 0 0 10">
+                <TextBox x:Name="SearchTextBox" Style="{StaticResource MainTextBoxStyle}" Padding="10 0 0 0" TextChanged="OnSearchTextBoxTextChanged"/>
+            </GroupBox>
+            <Button x:Name="Form004Button" Style="{StaticResource MainButtonStyle}" Content="Форма 004 | WORD |" Height="30" Margin="10 10 10 10" Click="Form004Button_Click"/>
+        </UniformGrid>
+
+        <!-- Patient -->
+        <GroupBox Header="Данные формы" Grid.Row="1" Foreground="#fff">
+            <DataGrid AutoGenerateColumns="false" x:Name="FormDataGrid" Margin="1" IsReadOnly="True">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ID" Binding="{Binding IdForm}"/>
+                    <DataGridTextColumn Header="Имя пациента" Binding="{Binding Patients.Name}"/>
+                    <DataGridTextColumn Header="Номер карты" Binding="{Binding NameForm}"/>
+                    <DataGridTextColumn Header="Пульс" Binding="{Binding Pulse}"/>
+                    <DataGridTextColumn Header="Артериальное давление" Binding="{Binding BloodPressure}"/>
+                    <DataGridTextColumn Header="Температура" Binding="{Binding Temperature}"/>
+                    <DataGridTextColumn Header="Дыхание" Binding="{Binding Breath}"/>
+                    <DataGridTextColumn Header="Вес" Binding="{Binding Weight}"/>
+                    <DataGridTextColumn Header="Выпито жидкости" Binding="{Binding LiquidConsumed}"/>
+                    <DataGridTextColumn Header="Суточное количество мочи" Binding="{Binding DailyAmountOfUrine}"/>
+                    <DataGridTextColumn Header="Стул" Binding="{Binding Chair}"/>
+                    <DataGridTextColumn Header="Ванна" Binding="{Binding Bath}"/>
+
+
+                    <DataGridTemplateColumn Header="Действия">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Button x:Name="FormDeleteButton" Content="Удалить" Click="FormDeleteButton_Click" Style="{StaticResource MainButtonStyle}"/>
+                                    <Button x:Name="Form004PatientButton" Content="Вывести паациента в Форму 004" Click="Form004PatientButton_Click" Style="{StaticResource MainButtonStyle}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </GroupBox>
+    </Grid>
+</Page>
